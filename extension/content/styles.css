@@ -1,0 +1,146 @@
+/* ============================================
+   PREREQ EXTENSION - LinkedIn Button Styles
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+.prereq-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 24px;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: 8px;
+  white-space: nowrap;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* Default state - Prereq blue */
+.prereq-btn-default {
+  background: #1954FA;
+  color: white;
+  box-shadow: 0 2px 8px rgba(25, 84, 250, 0.25);
+}
+
+.prereq-btn-default:hover {
+  background: #1447d4;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(25, 84, 250, 0.35);
+}
+
+.prereq-btn-default:active {
+  transform: translateY(0);
+}
+
+/* Loading state */
+.prereq-btn-loading {
+  background: #71717a;
+  color: white;
+  cursor: wait;
+  opacity: 0.9;
+}
+
+/* Success state - green */
+.prereq-btn-success {
+  background: #22c55e;
+  color: white;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.25);
+}
+
+/* Error state - red */
+.prereq-btn-error {
+  background: #ef4444;
+  color: white;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.25);
+}
+
+.prereq-btn-error:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);
+}
+
+/* Cached state - blue outline */
+.prereq-btn-cached {
+  background: white;
+  color: #1954FA;
+  border: 2px solid #1954FA;
+  box-shadow: 0 2px 8px rgba(25, 84, 250, 0.1);
+}
+
+.prereq-btn-cached:hover {
+  background: #eef4ff;
+  transform: translateY(-1px);
+}
+
+/* Logo mark SVG */
+.prereq-logo {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Icon */
+.prereq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prereq-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Text */
+.prereq-text {
+  font-size: 13px;
+  letter-spacing: -0.01em;
+}
+
+/* Loading spinner */
+.prereq-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: prereq-spin 0.6s linear infinite;
+}
+
+@keyframes prereq-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Disabled state */
+.prereq-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .prereq-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .prereq-text {
+    display: none;
+  }
+
+  .prereq-logo {
+    width: 18px;
+    height: 18px;
+  }
+}

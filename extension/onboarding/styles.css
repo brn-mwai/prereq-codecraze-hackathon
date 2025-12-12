@@ -1,0 +1,217 @@
+/* ============================================
+   PREREQ EXTENSION - Onboarding Styles
+   ============================================ */
+
+body {
+  background: linear-gradient(135deg, var(--primary-50) 0%, white 100%);
+  min-height: 100vh;
+}
+
+.onboarding {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-mark {
+  width: 28px;
+  height: 28px;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: var(--gray-600);
+}
+
+/* Steps */
+.steps {
+  margin-bottom: 32px;
+}
+
+.step {
+  display: flex;
+  gap: 16px;
+  padding: 18px;
+  background: white;
+  border-radius: var(--radius-lg);
+  margin-bottom: 10px;
+  border: 1px solid var(--gray-100);
+}
+
+.step-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--primary-500);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.step-content h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+.step-content p {
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.btn-lg {
+  padding: 14px 28px;
+  font-size: 15px;
+  box-shadow: 0 4px 14px rgba(25, 84, 250, 0.25);
+}
+
+.btn-lg:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(25, 84, 250, 0.3);
+}
+
+.cta-note {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+.cta-note a {
+  color: var(--primary-500);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cta-note a:hover {
+  text-decoration: underline;
+}
+
+/* Features */
+.features {
+  margin-bottom: 32px;
+}
+
+.features h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gray-900);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.feature {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid var(--gray-100);
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.sage-orb-canvas {
+  width: 28px;
+  height: 28px;
+}
+
+.feature h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+.feature p {
+  font-size: 12px;
+  color: var(--gray-500);
+  line-height: 1.4;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid var(--gray-200);
+}
+
+.footer p {
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+.footer a {
+  color: var(--primary-500);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}

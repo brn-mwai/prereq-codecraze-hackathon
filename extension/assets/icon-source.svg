@@ -1,0 +1,17 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="4" y="4" width="120" height="120" rx="24" fill="url(#bgGradient)"/>
+
+  <!-- Prereq P logo mark (scaled and centered) -->
+  <g transform="translate(24, 20) scale(0.48)">
+    <path d="M104.004 105C104.004 105 158.019 98.8837 156.004 54C153.99 9.11629 104.004 9 104.004 9H30.5043C30.5043 9 22.5044 9 14.5044 16.5C10.0518 20.6743 9.00434 29.5 9.00434 29.5V136.5C9.00434 136.5 8.64328 144 14.5043 150C22.3191 158 30.5043 157 30.5043 157H84.5043C84.5043 157 94.5104 154.159 98.5043 150C102.557 145.78 104.004 136.5 104.004 136.5V105ZM104.004 105H71.0043C71.0043 105 66.0043 105.857 61.5043 102C57.0043 98.1428 57.5043 94 57.5043 94V70.5C57.5043 70.5 58.0043 64.75 61.5043 61C65.0043 57.25 71.0043 56.5 71.0043 56.5H92.5043C92.5043 56.5 96.2345 56.5 100.004 60C102.312 62.1422 104.004 67 104.004 67V105Z" fill="white"/>
+  </g>
+</svg>
