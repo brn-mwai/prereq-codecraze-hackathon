@@ -1,0 +1,333 @@
+/* ============================================
+   Legal Pages Styles
+   ============================================ */
+
+.legalPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+}
+
+/* Header */
+.legalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Main Content */
+.legalContent {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.legalContent h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+
+.lastUpdated {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Sections */
+.legalContent section {
+  margin-bottom: 2.5rem;
+}
+
+.legalContent h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 1rem;
+  padding-top: 0.5rem;
+}
+
+.legalContent h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.legalContent p {
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.legalContent ul,
+.legalContent ol {
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.legalContent li {
+  margin-bottom: 0.5rem;
+}
+
+.legalContent a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.legalContent a:hover {
+  text-decoration: underline;
+}
+
+.legalContent strong {
+  color: #374151;
+  font-weight: 600;
+}
+
+/* Cookie Table */
+.cookieTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.875rem;
+}
+
+.cookieTable th,
+.cookieTable td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.cookieTable th {
+  background: #f9fafb;
+  color: #374151;
+  font-weight: 600;
+}
+
+.cookieTable td {
+  color: #4b5563;
+}
+
+/* Support Page Specific */
+.supportSection {
+  margin-bottom: 3rem;
+}
+
+.faqItem {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.faqItem h3 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.faqItem p,
+.faqItem ul,
+.faqItem ol {
+  margin-bottom: 0.5rem;
+}
+
+.faqItem ol {
+  padding-left: 1.25rem;
+}
+
+/* Contact Section */
+.contactSection {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.contactSection h2 {
+  margin-top: 0;
+}
+
+.contactMethods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.contactCard {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.contactIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.contactCard h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.contactCard p {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.contactLink {
+  color: #6366f1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+.responseTime {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #6366f1;
+}
+
+/* Useful Links */
+.usefulLinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.usefulLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  color: #374151;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.usefulLink:hover {
+  background: #f3f4f6;
+  color: #6366f1;
+  text-decoration: none;
+}
+
+.usefulLink svg {
+  flex-shrink: 0;
+}
+
+/* Footer */
+.legalFooter {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+  background: white;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.footerLinks a {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.footerLinks a:hover {
+  color: #6366f1;
+}
+
+.legalFooter p {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .legalContent {
+    padding: 2rem 1.5rem;
+  }
+
+  .legalContent h1 {
+    font-size: 2rem;
+  }
+
+  .legalContent h2 {
+    font-size: 1.25rem;
+  }
+
+  .contactSection {
+    padding: 1.5rem;
+  }
+
+  .contactMethods {
+    grid-template-columns: 1fr;
+  }
+
+  .usefulLinks {
+    grid-template-columns: 1fr;
+  }
+
+  .footerLinks {
+    gap: 1rem;
+  }
+}
